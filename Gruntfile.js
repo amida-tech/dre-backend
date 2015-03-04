@@ -16,7 +16,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         jshint: {
-            files: ['./test/unit/*.js'], //['gruntFile.js', 'package.json', '*.js', './lib/*.js','./lib/**/*.js','./test/*.js', './test/**/*.js'],
+            files: ['Gruntfile.js', 'lib/*.js', 'lib/**/*.js',  '*.js', ], //['gruntFile.js', 'package.json', '*.js', './lib/*.js','./lib/**/*.js','./test/*.js', './test/**/*.js'],
             options: {
                 browser: true,
                 curly: true,
