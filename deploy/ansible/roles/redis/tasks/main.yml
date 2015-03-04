@@ -1,9 +1,0 @@
----
-#file: roles/redis/tasks/main.yml
-
-- name: Install redis
-  yum: name=redis enablerepo="epel" state="latest"
-
-- name: Start Redis
-  command: service redis start
-

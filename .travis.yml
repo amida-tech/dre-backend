@@ -6,17 +6,11 @@ before_script:
 - npm install -g mocha
 - npm install -g istanbul
 - npm install --quiet
-- node server.js &
-- sleep 3
-- cd ./client
-- npm install --quiet
 - grunt
-- cd ..
 services:
 - mongodb
 - redis-server
 script:
-- grunt --gruntfile client/Gruntfile.js
 - grunt --gruntfile ./Gruntfile.js
 #- git config --global user.email "dmitry.kachaev@gmail.com"
 #- git config --global user.name "Dmitry Kachaev"

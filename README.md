@@ -1,13 +1,7 @@
-Data Reconciliation Engine (DRE)
+Data Reconciliation Engine Backend (DRE)
 =========
 
-DRE is a patient frontend (UI) and Node.js server for reconciling health data.
-
-aka. Raccoon - Data Raccoonciliation Engine for Health Data.
-
-![Raccoon](http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Yawning_Raccoon.jpg/976px-Yawning_Raccoon.jpg)
-
-[![Build Status](https://travis-ci.org/amida-tech/DRE.svg)](https://travis-ci.org/amida-tech/DRE)
+[![Build Status](https://travis-ci.org/amida-tech/dre-backend.svg)](https://travis-ci.org/amida-tech/dre-backend)
 
 High Level Overview
 ===================
@@ -45,15 +39,6 @@ This provides a API for interaction with and access to the aggregated health rec
 
 Documentation for record.js [API](./docs/recordjs.md)
 
-### Screenshots of the Demo
--![Landing Page](./docs/images/1-Landing.png)		
--![Master Health Record View](./docs/images/2-MyRecord.png)		
--![My Files](./docs/images/3-MyFiles.png)	
-
--![Reconciliation Interface](./docs/images/4-Match.png)		
--![Billing Section](./docs/images/5-Billing.png)		
--![Notes](./docs/images/6-NotesDetails.png)		
--![Account History](./docs/images/7-History.png)
 
 
 ##Quick up and running guide
@@ -70,21 +55,10 @@ Documentation for record.js [API](./docs/recordjs.md)
 # you need Node.js and Grunt.js installed
 # and MongoDB + Redis runnning
 
-#build client app
-cd client
-npm install
-bower install
-grunt build # you can run "grunt dev" for dev purposes 
-
-#run server side tests
-cd ..
+#run tests
 npm install
 grunt
 
-#run server
-node server.js
-
-# go to localhost:3000 in your browser
 ```
 
 ## Contributing
